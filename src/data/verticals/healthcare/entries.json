@@ -1,0 +1,110 @@
+[
+  {
+    "id": "hr-handoff",
+    "name": "Shift handoff checklist",
+    "slug": "shift-handoff-checklist",
+    "types": ["Nursing", "Operations"],
+    "description": "Fictional checklist for training simulations — not for clinical use.",
+    "stats": { "Revision": "stub-2024", "Owner": "Demo" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-sepsis-drill",
+    "name": "Sepsis response drill (tabletop)",
+    "slug": "sepsis-drill",
+    "types": ["Emergency", "Training"],
+    "description": "Tabletop scenario cards for education only.",
+    "stats": { "Duration": "45m", "Audience": "mixed" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-rx-reconcile",
+    "name": "Medication reconciliation worksheet",
+    "slug": "rx-reconcile",
+    "types": ["Pharmacy", "Safety"],
+    "description": "Sample worksheet layout for UX reviews — no live drug data.",
+    "stats": { "Pages": "2", "PII": "none" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-consent-plain",
+    "name": "Plain-language consent template",
+    "slug": "consent-plain",
+    "types": ["Admin", "Compliance"],
+    "description": "Demonstration copy for readability testing; not legally vetted.",
+    "stats": { "Reading level": "Grade 8", "Locale": "en-US" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-telehealth-flow",
+    "name": "Telehealth visit flowchart",
+    "slug": "telehealth-flow",
+    "types": ["Operations", "IT"],
+    "description": "High-level flow for workshop exercises.",
+    "stats": { "Channels": "video,phone", "PHI": "none" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-infection-bundle",
+    "name": "Infection prevention bundle poster",
+    "slug": "infection-bundle",
+    "types": ["Infection control", "Education"],
+    "description": "Printable poster mock for intranet previews.",
+    "stats": { "Size": "18x24", "Color": "2-ink" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-patient-nav",
+    "name": "Patient navigator script",
+    "slug": "patient-navigator-script",
+    "types": ["Care coordination", "Operations"],
+    "description": "Call-center style script stub for role-play training.",
+    "stats": { "Tone": "neutral", "Escalation": "stub" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-lab-tat",
+    "name": "Lab turnaround time dashboard spec",
+    "slug": "lab-tat-dashboard",
+    "types": ["Lab", "Analytics"],
+    "description": "Wireframe notes for analytics demos — metrics are synthetic.",
+    "stats": { "KPIs": "3", "Refresh": "daily" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-readmission",
+    "name": "Readmission risk explainer (education)",
+    "slug": "readmission-explainer",
+    "types": ["Analytics", "Education"],
+    "description": "Conceptual explainer; not a predictive model.",
+    "stats": { "Model": "none", "Data": "synthetic" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-icu-family",
+    "name": "ICU family communication guide",
+    "slug": "icu-family-comms",
+    "types": ["Critical care", "Communication"],
+    "description": "Communication prompts for simulation labs.",
+    "stats": { "Pages": "6", "PHI": "none" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-vaccine-clinic",
+    "name": "Community vaccine clinic runbook",
+    "slug": "vaccine-clinic-runbook",
+    "types": ["Public health", "Operations"],
+    "description": "Logistics checklist for tabletop planning only.",
+    "stats": { "Stations": "5", "Staffing": "stub" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "hr-biomed-rounds",
+    "name": "Biomed rounds agenda template",
+    "slug": "biomed-rounds",
+    "types": ["Engineering", "Operations"],
+    "description": "Meeting agenda shell for capital planning workshops.",
+    "stats": { "Cadence": "monthly", "Assets": "fictional" },
+    "spriteUrl": ""
+  }
+]

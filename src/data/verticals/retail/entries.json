@@ -1,0 +1,110 @@
+[
+  {
+    "id": "sku-1001",
+    "name": "Aurora Desk Lamp",
+    "slug": "aurora-desk-lamp",
+    "types": ["Home", "Lighting"],
+    "description": "Adjustable LED desk lamp with warm-to-cool spectrum presets.",
+    "stats": { "SKU": "1001", "Margin": "42%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1002",
+    "name": "Northwind Travel Mug",
+    "slug": "northwind-travel-mug",
+    "types": ["Kitchen", "Drinkware"],
+    "description": "Double-wall stainless mug; 16oz; leak-resistant lid.",
+    "stats": { "SKU": "1002", "Margin": "38%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1003",
+    "name": "Summit Hiking Pack 28L",
+    "slug": "summit-hiking-pack",
+    "types": ["Outdoors", "Bags"],
+    "description": "Ventilated frame daypack with hydration routing and rain cover.",
+    "stats": { "SKU": "1003", "Margin": "35%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1004",
+    "name": "Cedarline Wool Throw",
+    "slug": "cedarline-wool-throw",
+    "types": ["Home", "Textiles"],
+    "description": "Machine-washable merino blend throw; 50x60 in.",
+    "stats": { "SKU": "1004", "Margin": "44%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1005",
+    "name": "Pulse Fitness Tracker",
+    "slug": "pulse-fitness-tracker",
+    "types": ["Electronics", "Wearables"],
+    "description": "Stub wearable for demos — battery life and sensors are fictional.",
+    "stats": { "SKU": "1005", "Warranty": "1yr" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1006",
+    "name": "Harbor Bluetooth Speaker",
+    "slug": "harbor-bluetooth-speaker",
+    "types": ["Electronics", "Audio"],
+    "description": "Compact IPX7 speaker with stereo pairing mode.",
+    "stats": { "SKU": "1006", "Margin": "31%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1007",
+    "name": "Willow Ceramic Planter Set",
+    "slug": "willow-planter-set",
+    "types": ["Home", "Garden"],
+    "description": "Set of three nesting planters with drainage trays.",
+    "stats": { "SKU": "1007", "Margin": "48%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1008",
+    "name": "Metro Chef Knife 8\"",
+    "slug": "metro-chef-knife",
+    "types": ["Kitchen", "Cutlery"],
+    "description": "High-carbon stainless chef knife with ergonomic handle.",
+    "stats": { "SKU": "1008", "Margin": "40%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1009",
+    "name": "Breeze Air Purifier Mini",
+    "slug": "breeze-air-purifier-mini",
+    "types": ["Home", "Appliances"],
+    "description": "HEPA-style filter demo unit for showroom placements.",
+    "stats": { "SKU": "1009", "CADR": "stub" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1010",
+    "name": "Trailhead Insulated Bottle",
+    "slug": "trailhead-bottle",
+    "types": ["Outdoors", "Drinkware"],
+    "description": "32oz vacuum bottle; powder coat finish; stub colors only.",
+    "stats": { "SKU": "1010", "Margin": "36%" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1011",
+    "name": "Studio Noise-Canceling Headphones",
+    "slug": "studio-headphones",
+    "types": ["Electronics", "Audio"],
+    "description": "Over-ear ANC headphones — specifications are placeholder text.",
+    "stats": { "SKU": "1011", "ANC": "demo" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "sku-1012",
+    "name": "Lotus Yoga Mat Pro",
+    "slug": "lotus-yoga-mat",
+    "types": ["Fitness", "Outdoors"],
+    "description": "5mm closed-cell mat with alignment markers.",
+    "stats": { "SKU": "1012", "Margin": "45%" },
+    "spriteUrl": ""
+  }
+]

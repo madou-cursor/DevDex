@@ -1,0 +1,10 @@
+{
+  "verticalLabel": "Developer tools",
+  "heroSubtitle": "Explore libraries, CLIs, and services — all stub data, no live APIs.",
+  "filterLabel": "Category",
+  "searchPlaceholder": "Search by name or description…",
+  "emptyTitle": "Nothing matched",
+  "emptyBody": "Clear the search box or set the category filter to “All” to see more entries.",
+  "catalogTitle": "Tooling catalog",
+  "detailBack": "Back to catalog"
+}

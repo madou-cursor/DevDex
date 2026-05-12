@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevDex
 
-## Getting Started
+Professional **catalog / “dex”** demo: search, category filter, and detail pages over **static JSON fixtures** — **no external data APIs**. Intended for **Vercel** deploys with **per-environment branding** via `NEXT_PUBLIC_*` variables.
 
-First, run the development server:
+## Quick start
 
 ```bash
+cd devdex
+cp .env.example .env.local
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verticals (build-time)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Set `NEXT_PUBLIC_VERTICAL` to one of:
 
-## Learn More
+| Value        | Content                          |
+| ------------ | -------------------------------- |
+| `devtools`   | Libraries & tooling (default)    |
+| `retail`     | Sample retail SKUs               |
+| `healthcare` | Fictional healthcare **training** stubs — not medical advice |
 
-To learn more about Next.js, take a look at the following resources:
+Data lives under `src/data/verticals/<vertical>/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Branding env vars
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See [.env.example](./.env.example). Colors map to CSS variables on `<html>` (`--color-bg`, `--color-accent`, etc.). Optional `NEXT_PUBLIC_LOGO_URL` renders in the header.
+
+## Scripts
+
+| Command       | Action        |
+| ------------- | ------------- |
+| `npm run dev` | Dev server    |
+| `npm run build` | Production build |
+| `npm run start` | Run production server locally |
+| `npm run lint`  | ESLint        |
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repo to GitHub (or GitLab / Bitbucket).
+2. **New Project** in Vercel → import the repo; framework **Next.js** is auto-detected.
+3. Set **Environment Variables** from `.env.example` (at least `NEXT_PUBLIC_VERTICAL` if not using the default).
+4. Deploy. Use **Preview** builds to validate alternate env sets.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+[MIT](./LICENSE)

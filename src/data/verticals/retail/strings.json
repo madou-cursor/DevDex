@@ -1,0 +1,10 @@
+{
+  "verticalLabel": "Retail assortment",
+  "heroSubtitle": "Browse sample SKUs and categories — static fixtures for demos and POCs.",
+  "filterLabel": "Department",
+  "searchPlaceholder": "Search products…",
+  "emptyTitle": "No products found",
+  "emptyBody": "Try another search or choose “All departments” to reset filters.",
+  "catalogTitle": "Store catalog",
+  "detailBack": "Return to store"
+}

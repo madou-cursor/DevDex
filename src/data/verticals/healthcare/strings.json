@@ -1,0 +1,10 @@
+{
+  "verticalLabel": "Clinical reference",
+  "heroSubtitle": "Reference-style entries for training demos — not medical advice; data is fictional.",
+  "filterLabel": "Specialty",
+  "searchPlaceholder": "Search protocols and roles…",
+  "emptyTitle": "No entries",
+  "emptyBody": "Adjust filters or clear search to browse the full stub set.",
+  "catalogTitle": "Reference index",
+  "detailBack": "Back to index"
+}

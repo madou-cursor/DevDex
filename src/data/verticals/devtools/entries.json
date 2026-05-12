@@ -1,0 +1,110 @@
+[
+  {
+    "id": "vite",
+    "name": "Vite",
+    "slug": "vite",
+    "types": ["Build", "Bundler"],
+    "description": "Next-generation frontend tooling with fast cold start and HMR.",
+    "stats": { "License": "MIT", "Runtime": "Node" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "esbuild",
+    "name": "esbuild",
+    "slug": "esbuild",
+    "types": ["Build", "Bundler"],
+    "description": "An extremely fast JavaScript bundler written in Go.",
+    "stats": { "License": "MIT", "Language": "Go" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "turborepo",
+    "name": "Turborepo",
+    "slug": "turborepo",
+    "types": ["Monorepo", "Build"],
+    "description": "High-performance build system for JavaScript and TypeScript codebases.",
+    "stats": { "License": "MPL-2.0", "Vendor": "Vercel" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "pnpm",
+    "name": "pnpm",
+    "slug": "pnpm",
+    "types": ["Package manager", "Monorepo"],
+    "description": "Fast, disk-efficient package manager with strict node_modules layout.",
+    "stats": { "License": "MIT", "Store": "content-addressable" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "biome",
+    "name": "Biome",
+    "slug": "biome",
+    "types": ["Lint", "Format"],
+    "description": "Formatter and linter toolchain focused on speed and a unified experience.",
+    "stats": { "License": "MIT", "Language": "Rust" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "slug": "playwright",
+    "types": ["Test", "Browser"],
+    "description": "End-to-end testing across Chromium, Firefox, and WebKit.",
+    "stats": { "License": "Apache-2.0", "Vendor": "Microsoft" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "vitest",
+    "name": "Vitest",
+    "slug": "vitest",
+    "types": ["Test", "Build"],
+    "description": "Unit test framework powered by Vite with Jest-compatible APIs.",
+    "stats": { "License": "MIT", "Stack": "Vite" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "slug": "typescript",
+    "types": ["Language", "Compiler"],
+    "description": "Typed superset of JavaScript that compiles to plain JavaScript.",
+    "stats": { "License": "Apache-2.0", "Vendor": "Microsoft" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "slug": "tailwind-css",
+    "types": ["CSS", "UI"],
+    "description": "Utility-first CSS framework for rapidly building custom designs.",
+    "stats": { "License": "MIT", "Paradigm": "utility-first" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "zod",
+    "name": "Zod",
+    "slug": "zod",
+    "types": ["Validation", "TypeScript"],
+    "description": "TypeScript-first schema validation with static type inference.",
+    "stats": { "License": "MIT", "Focus": "runtime + types" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "tanstack-query",
+    "name": "TanStack Query",
+    "slug": "tanstack-query",
+    "types": ["Data", "React"],
+    "description": "Powerful asynchronous state management for TS/JS apps.",
+    "stats": { "License": "MIT", "UI": "framework-agnostic" },
+    "spriteUrl": ""
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "slug": "nextjs",
+    "types": ["Framework", "React"],
+    "description": "React framework with routing, rendering modes, and deployment on Vercel.",
+    "stats": { "License": "MIT", "Deploy": "Vercel" },
+    "spriteUrl": ""
+  }
+]
