@@ -9,6 +9,7 @@
   --color-brand: #26251e;
   --color-card: #f2f1ed;
   --color-muted: #5c5b55;
+  --sidebar-w: 260px;
 }
 
 @layer base {

@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Header } from "@/components/Header";
-import { getBranding } from "@/lib/branding";
 import { getEntryById, getVerticalBundle } from "@/lib/data";
 
 export default async function EntryPage({
@@ -13,22 +11,19 @@ export default async function EntryPage({
   const entry = getEntryById(id);
   if (!entry) notFound();
 
-  const branding = getBranding();
   const { strings } = getVerticalBundle();
   const hasImg = Boolean(entry.spriteUrl && entry.spriteUrl.length > 0);
 
   return (
-    <>
-      <Header branding={branding} verticalLabel={strings.verticalLabel} />
-      <main id="main" className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-1 text-sm font-medium text-dd-muted no-underline hover:text-dd-accent"
-        >
-          ← {strings.detailBack}
-        </Link>
+    <main id="main" className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+      <Link
+        href="/"
+        className="inline-flex items-center gap-1 text-sm font-medium text-dd-muted no-underline hover:text-dd-accent"
+      >
+        ← {strings.detailBack}
+      </Link>
 
-        <article className="mt-8 space-y-6 rounded-2xl border border-dd-brand/10 bg-dd-card p-6 sm:p-8">
+      <article className="mt-8 space-y-6 rounded-2xl border border-dd-brand/10 bg-dd-card p-6 sm:p-8">
           <div className="flex flex-col gap-6 sm:flex-row">
             <div className="sm:w-48">
               {hasImg ? (
@@ -92,8 +87,7 @@ export default async function EntryPage({
             Entry id: <code className="font-mono text-dd-fg">{entry.id}</code> · slug:{" "}
             <code className="font-mono text-dd-fg">{entry.slug}</code>
           </p>
-        </article>
-      </main>
-    </>
+      </article>
+    </main>
   );
 }
