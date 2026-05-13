@@ -1,3 +1,9 @@
+---
+name: customize-demo-for-customer
+description: Customize demo from company name (research → branch → GitHub)
+disable-model-invocation: true
+---
+
 # Customize demo from company name (research → branch → GitHub)
 
 **Input:** the user gives **only the company name**. If they did not give it, ask once for that single string.
