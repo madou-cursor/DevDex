@@ -1,4 +1,5 @@
 import type { Branding } from "@/lib/branding";
+import { brandInitials } from "@/lib/branding";
 import type { VerticalStrings } from "@/lib/types";
 
 export function TopBar({
@@ -36,7 +37,7 @@ export function TopBar({
               style={{ backgroundColor: "var(--color-accent)" }}
               aria-hidden
             >
-              DD
+              {brandInitials(branding.siteTitle)}
             </span>
           )}
           <div className="min-w-0">

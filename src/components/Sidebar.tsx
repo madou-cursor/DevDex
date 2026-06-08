@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import type { Branding } from "@/lib/branding";
+import { brandInitials } from "@/lib/branding";
 import type { NavGroup } from "@/lib/nav";
 import type { VerticalId, VerticalStrings } from "@/lib/types";
 import { SidebarNav } from "./SidebarNav";
@@ -37,7 +38,7 @@ export function Sidebar({
               style={{ backgroundColor: "var(--color-accent)" }}
               aria-hidden
             >
-              DD
+              {brandInitials(branding.siteTitle)}
             </span>
           )}
           <div className="min-w-0">
