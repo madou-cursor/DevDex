@@ -1,13 +1,16 @@
 import type { Branding } from "@/lib/branding";
+import type { VerticalStrings } from "@/lib/types";
 
 export function TopBar({
   branding,
   verticalLabel,
   onOpenMenu,
+  strings,
 }: {
   branding: Branding;
   verticalLabel: string;
   onOpenMenu: () => void;
+  strings: VerticalStrings;
 }) {
   return (
     <header className="sticky top-0 z-30 border-b border-dd-brand/10 bg-dd-card/90 backdrop-blur-sm lg:hidden">
@@ -15,10 +18,10 @@ export function TopBar({
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-dd-brand/15 bg-dd-bg text-dd-fg outline-none ring-dd-accent/30 hover:bg-dd-card focus-visible:ring-2"
-          aria-label="Open navigation menu"
+          aria-label={strings.uiMenuOpenAria}
           onClick={onOpenMenu}
         >
-          <span className="sr-only">Menu</span>
+          <span className="sr-only">{strings.uiMenuSrLabel}</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden className="text-dd-fg">
             <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
           </svg>

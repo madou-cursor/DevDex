@@ -5,6 +5,8 @@ import retailEntries from "@/data/verticals/retail/entries.json";
 import retailStrings from "@/data/verticals/retail/strings.json";
 import healthcareEntries from "@/data/verticals/healthcare/entries.json";
 import healthcareStrings from "@/data/verticals/healthcare/strings.json";
+import bankingEntries from "@/data/verticals/banking/entries.json";
+import bankingStrings from "@/data/verticals/banking/strings.json";
 
 const bundles = {
   devtools: {
@@ -19,14 +21,18 @@ const bundles = {
     entries: healthcareEntries as unknown as DexEntry[],
     strings: healthcareStrings as VerticalStrings,
   },
+  banking: {
+    entries: bankingEntries as unknown as DexEntry[],
+    strings: bankingStrings as VerticalStrings,
+  },
 } as const;
 
-const ALLOWED: VerticalId[] = ["devtools", "retail", "healthcare"];
+const ALLOWED: VerticalId[] = ["devtools", "retail", "healthcare", "banking"];
 
 export function getActiveVerticalId(): VerticalId {
-  const raw = (process.env.NEXT_PUBLIC_VERTICAL || "devtools").toLowerCase();
+  const raw = (process.env.NEXT_PUBLIC_VERTICAL || "banking").toLowerCase();
   if (ALLOWED.includes(raw as VerticalId)) return raw as VerticalId;
-  return "devtools";
+  return "banking";
 }
 
 export function getVerticalBundle() {

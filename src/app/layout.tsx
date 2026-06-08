@@ -24,9 +24,10 @@ export default function RootLayout({
 }>) {
   const b = getBranding();
   const bundle = getVerticalBundle();
-  const nav = getNav(bundle.entries, bundle.strings.filterLabel);
+  const nav = getNav(bundle.entries, bundle.strings);
+  const htmlLang = bundle.id === "banking" ? "es" : "en";
   return (
-    <html lang="en" style={brandingCssVars(b)}>
+    <html lang={htmlLang} style={brandingCssVars(b)}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-dvh bg-dd-bg font-sans text-dd-fg antialiased`}
       >
@@ -35,6 +36,7 @@ export default function RootLayout({
           verticalLabel={bundle.strings.verticalLabel}
           verticalId={bundle.id}
           nav={nav}
+          strings={bundle.strings}
         >
           {children}
         </AppShell>

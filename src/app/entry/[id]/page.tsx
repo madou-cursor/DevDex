@@ -68,7 +68,7 @@ export default async function EntryPage({
 
           <section aria-labelledby="stats-heading">
             <h2 id="stats-heading" className="text-sm font-semibold uppercase tracking-wide text-dd-muted">
-              Details
+              {strings.uiDetailsHeading}
             </h2>
             <dl className="mt-3 grid gap-3 sm:grid-cols-2">
               {Object.entries(entry.stats).map(([k, v]) => (
@@ -84,7 +84,7 @@ export default async function EntryPage({
           </section>
 
           <p className="text-xs text-dd-muted">
-            Entry id: <code className="font-mono text-dd-fg">{entry.id}</code> · slug:{" "}
+            {strings.uiEntryIdLabel}: <code className="font-mono text-dd-fg">{entry.id}</code> · {strings.uiSlugLabel}:{" "}
             <code className="font-mono text-dd-fg">{entry.slug}</code>
           </p>
       </article>

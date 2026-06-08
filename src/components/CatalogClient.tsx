@@ -64,7 +64,7 @@ export function CatalogClient({
 
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end">
         <label className="flex flex-1 flex-col gap-1 text-sm font-medium text-dd-fg">
-          Search
+          {strings.uiSearchLabel}
           <input
             type="search"
             value={q}
@@ -80,7 +80,7 @@ export function CatalogClient({
             onChange={(e) => setTypeFilterAndUrl(e.target.value)}
             className="rounded-lg border border-dd-brand/15 bg-white px-3 py-2 text-dd-fg shadow-inner outline-none focus:ring-2 focus:ring-dd-accent/30"
           >
-            <option value="__all__">All</option>
+            <option value="__all__">{strings.uiAllOption}</option>
             {typeOptions.map((t) => (
               <option key={t} value={t}>
                 {t}

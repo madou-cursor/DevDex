@@ -1,0 +1,170 @@
+[
+  {
+    "id": "bbva-cuenta-online",
+    "name": "Cuenta Online Sin Comisiones",
+    "slug": "cuenta-online-sin-comisiones",
+    "types": ["Cuentas"],
+    "description": "Cuenta corriente 100% online, sin comisiones de administración ni de mantenimiento para nuevos clientes. Datos ficticios para demo.",
+    "stats": {
+      "Comisión apertura (demo)": "0 €",
+      "Comisión mantenimiento (demo)": "0 €",
+      "Transferencias SEPA (demo)": "Gratis",
+      "Acceso": "App + Web"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-cuenta-vaven",
+    "name": "Cuenta Va&Ven Joven",
+    "slug": "cuenta-vaven-joven",
+    "types": ["Cuentas"],
+    "description": "Cuenta diseñada para clientes jóvenes con condiciones especiales y tarjeta gratuita. Producto de demostración con valores ficticios.",
+    "stats": {
+      "Edad recomendada (demo)": "14 — 25",
+      "Comisión (demo)": "0 €",
+      "Tarjeta incluida (demo)": "Sí",
+      "Bizum (demo)": "Incluido"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-tarjeta-aqua-debito",
+    "name": "Tarjeta Aqua Débito",
+    "slug": "tarjeta-aqua-debito",
+    "types": ["Tarjetas"],
+    "description": "Tarjeta de débito sin numeración impresa, generada y bloqueada desde la app. Producto de demostración.",
+    "stats": {
+      "Cuota anual (demo)": "0 €",
+      "Retiradas en cajeros BBVA (demo)": "Gratis",
+      "Pagos contactless (demo)": "Sí",
+      "Compatible con Apple/Google Pay (demo)": "Sí"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-tarjeta-aqua-credito",
+    "name": "Tarjeta Aqua Crédito",
+    "slug": "tarjeta-aqua-credito",
+    "types": ["Tarjetas"],
+    "description": "Tarjeta de crédito con pago fin de mes o aplazado. Importe y condiciones ficticias para demo.",
+    "stats": {
+      "TIN (demo)": "1,50% mensual",
+      "TAE (demo)": "18,90%",
+      "Cuota anual (demo)": "0 €",
+      "Límite inicial (demo)": "3.000 €"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-hipoteca-fija",
+    "name": "Hipoteca Fija Demo",
+    "slug": "hipoteca-fija-demo",
+    "types": ["Hipotecas"],
+    "description": "Cuota mensual constante durante toda la vida del préstamo. Ideal para clientes que buscan estabilidad. Datos ficticios para demo.",
+    "stats": {
+      "TIN (demo)": "3,10%",
+      "TAE (demo)": "3,45%",
+      "Plazo máx. (demo)": "30 años",
+      "Importe máx. (demo)": "500.000 €"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-hipoteca-variable",
+    "name": "Hipoteca Variable Demo",
+    "slug": "hipoteca-variable-demo",
+    "types": ["Hipotecas "],
+    "description": "Cuota mensual referenciada al Euríbor más un diferencial. Producto de demostración con valores ficticios.",
+    "stats": {
+      "TIN inicial (demo)": "Euríbor + 0,89%",
+      "TAE (demo)": "4,12%",
+      "Plazo máx. (demo)": "30 años",
+      "Revisión (demo)": "Anual"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-prestamo-personal",
+    "name": "Préstamo Personal Online",
+    "slug": "prestamo-personal-online",
+    "types": ["Préstamos"],
+    "description": "Financiación inmediata para tus proyectos personales, contratable desde la app. Condiciones ficticias para demo.",
+    "stats": {
+      "TIN (demo)": "6,50%",
+      "TAE (demo)": "6,95%",
+      "Importe máx. (demo)": "60.000 €",
+      "Plazo máx. (demo)": "8 años"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-prestamo-coche",
+    "name": "Préstamo Coche",
+    "slug": "prestamo-coche",
+    "types": ["Préstamos"],
+    "description": "Financiación para la compra de vehículos nuevos o de ocasión. Producto de demostración con valores ficticios.",
+    "stats": {
+      "TIN (demo)": "5,90%",
+      "TAE (demo)": "6,25%",
+      "Importe máx. (demo)": "75.000 €",
+      "Plazo máx. (demo)": "8 años"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-fondo-quality",
+    "name": "Fondo Quality Inversión",
+    "slug": "fondo-quality-inversion",
+    "types": ["Inversión"],
+    "description": "Fondo de inversión multiactivo gestionado activamente. Información ilustrativa para demo, sin valor comercial.",
+    "stats": {
+      "Categoría (demo)": "Mixto global",
+      "Comisión gestión (demo)": "1,35%",
+      "Aportación inicial (demo)": "300 €",
+      "Riesgo (demo)": "4/7"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-plan-pensiones",
+    "name": "Plan de Pensiones Individual",
+    "slug": "plan-pensiones-individual",
+    "types": ["Inversión"],
+    "description": "Plan de pensiones individual con varios perfiles de riesgo. Producto de demostración; datos ficticios.",
+    "stats": {
+      "Aportación mín. (demo)": "30 €/mes",
+      "Aportación máx. anual (demo)": "1.500 €",
+      "Perfiles (demo)": "Conservador / Moderado / Decidido",
+      "Ventaja fiscal (demo)": "Sí"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-seguro-hogar",
+    "name": "Seguro Hogar",
+    "slug": "seguro-hogar",
+    "types": ["Seguros"],
+    "description": "Cobertura para tu vivienda habitual con asistencia 24h. Coberturas y precios ficticios para demo.",
+    "stats": {
+      "Cobertura básica (demo)": "Continente + Contenido",
+      "Asistencia (demo)": "24/7",
+      "Prima anual desde (demo)": "120 €",
+      "Cobertura responsabilidad civil (demo)": "300.000 €"
+    },
+    "spriteUrl": ""
+  },
+  {
+    "id": "bbva-seguro-auto",
+    "name": "Seguro Auto",
+    "slug": "seguro-auto",
+    "types": ["Seguros"],
+    "description": "Seguro de automóvil con modalidades a terceros o todo riesgo. Valores ficticios para demo.",
+    "stats": {
+      "Modalidades (demo)": "Terceros / Terceros ampliado / Todo riesgo",
+      "Asistencia (demo)": "24/7",
+      "Franquicia (demo)": "300 €",
+      "Prima anual desde (demo)": "210 €"
+    },
+    "spriteUrl": ""
+  }
+]

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import type { Branding } from "@/lib/branding";
 import type { NavGroup } from "@/lib/nav";
-import type { VerticalId } from "@/lib/types";
+import type { VerticalId, VerticalStrings } from "@/lib/types";
 import { Sidebar } from "./Sidebar";
 
 export function MobileNavDrawer({
@@ -13,6 +13,7 @@ export function MobileNavDrawer({
   verticalLabel,
   verticalId,
   nav,
+  strings,
 }: {
   open: boolean;
   onClose: () => void;
@@ -20,6 +21,7 @@ export function MobileNavDrawer({
   verticalLabel: string;
   verticalId: VerticalId;
   nav: NavGroup[];
+  strings: VerticalStrings;
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
 
@@ -48,7 +50,7 @@ export function MobileNavDrawer({
       <button
         type="button"
         className="absolute inset-0 bg-black/40"
-        aria-label="Close menu"
+        aria-label={strings.uiMenuCloseAria}
         onClick={onClose}
       />
       <div
@@ -56,7 +58,7 @@ export function MobileNavDrawer({
         className="absolute inset-y-0 left-0 flex w-[min(100%,var(--sidebar-w))] max-w-[320px] flex-col border-r border-dd-brand/10 bg-dd-card shadow-xl"
         role="dialog"
         aria-modal="true"
-        aria-label="Navigation"
+        aria-label={strings.uiNavDialogAria}
       >
         <div className="flex items-center justify-end border-b border-dd-brand/10 px-2 py-2">
           <button
@@ -64,7 +66,7 @@ export function MobileNavDrawer({
             className="rounded-md px-3 py-2 text-sm font-medium text-dd-muted hover:bg-dd-bg hover:text-dd-fg"
             onClick={onClose}
           >
-            Close
+            {strings.uiCloseButton}
           </button>
         </div>
         <div className="min-h-0 flex-1 overflow-y-auto">
@@ -73,6 +75,7 @@ export function MobileNavDrawer({
             verticalLabel={verticalLabel}
             verticalId={verticalId}
             nav={nav}
+            strings={strings}
             onNavigate={onClose}
           />
         </div>

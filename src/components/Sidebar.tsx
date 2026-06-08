@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import type { Branding } from "@/lib/branding";
 import type { NavGroup } from "@/lib/nav";
-import type { VerticalId } from "@/lib/types";
+import type { VerticalId, VerticalStrings } from "@/lib/types";
 import { SidebarNav } from "./SidebarNav";
 
 export function Sidebar({
@@ -10,12 +10,14 @@ export function Sidebar({
   verticalLabel,
   verticalId,
   nav,
+  strings,
   onNavigate,
 }: {
   branding: Branding;
   verticalLabel: string;
   verticalId: VerticalId;
   nav: NavGroup[];
+  strings: VerticalStrings;
   onNavigate?: () => void;
 }) {
   return (
@@ -51,7 +53,7 @@ export function Sidebar({
           aria-hidden
         >
           <span className="opacity-70">⌕</span>
-          <span className="flex-1 truncate">Search the catalog…</span>
+          <span className="flex-1 truncate">{strings.uiSearchHint}</span>
           <kbd className="hidden rounded border border-dd-brand/15 bg-dd-card px-1.5 py-0.5 font-mono text-[10px] text-dd-muted sm:inline">
             ⌘K
           </kbd>
@@ -74,14 +76,14 @@ export function Sidebar({
             aria-hidden
           />
           <span className="font-medium capitalize">{verticalId}</span>
-          <span className="ml-auto text-dd-muted">build-time</span>
+          <span className="ml-auto text-dd-muted">{strings.uiBuildTimeBadge}</span>
         </div>
         <div className="mt-3 flex items-center justify-between px-1 text-xs text-dd-muted">
-          <span>Theme</span>
+          <span>{strings.uiThemeLabel}</span>
           <div
             className="relative h-[22px] w-[38px] rounded-full bg-dd-card ring-1 ring-dd-brand/15"
             aria-hidden
-            title="Theme toggle (placeholder)"
+            title={strings.uiThemeToggleTitle}
           >
             <span className="absolute left-0.5 top-0.5 block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
           </div>
