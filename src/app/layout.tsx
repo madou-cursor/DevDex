@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { AppShell } from "@/components/AppShell";
 import "./globals.css";
-import { brandingCssVars, brandingMetadata, getBranding } from "@/lib/branding";
+import { brandingMetadata, brandingStyleBlock, getBranding } from "@/lib/branding";
+import { themeInitScript } from "@/lib/theme";
 import { getVerticalBundle } from "@/lib/data";
 import { getNav } from "@/lib/nav";
 
@@ -25,8 +26,13 @@ export default function RootLayout({
   const b = getBranding();
   const bundle = getVerticalBundle();
   const nav = getNav(bundle.entries, bundle.strings.filterLabel);
+  const brandingStyle = brandingStyleBlock(b);
   return (
-    <html lang="en" style={brandingCssVars(b)}>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        {brandingStyle ? <style dangerouslySetInnerHTML={{ __html: brandingStyle }} /> : null}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} min-h-dvh bg-dd-bg font-sans text-dd-fg antialiased`}
       >

@@ -8,8 +8,20 @@
   --color-accent: #f54e00;
   --color-brand: #26251e;
   --color-card: #f2f1ed;
+  --color-input: #ffffff;
   --color-muted: #5c5b55;
   --sidebar-w: 260px;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-bg: #14120b;
+  --color-fg: #edecec;
+  --color-accent: #f54e00;
+  --color-brand: #edecec;
+  --color-card: #1b1913;
+  --color-input: #1d1b15;
+  --color-muted: #a8a7a5;
 }
 
 @layer base {

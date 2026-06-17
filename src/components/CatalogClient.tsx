@@ -70,7 +70,7 @@ export function CatalogClient({
             value={q}
             onChange={(e) => setQ(e.target.value)}
             placeholder={strings.searchPlaceholder}
-            className="rounded-lg border border-dd-brand/15 bg-white px-3 py-2 text-dd-fg shadow-inner outline-none ring-dd-accent/30 placeholder:text-dd-muted focus:ring-2"
+            className="rounded-lg border border-dd-brand/15 bg-dd-input px-3 py-2 text-dd-fg shadow-inner outline-none ring-dd-accent/30 placeholder:text-dd-muted focus:ring-2"
           />
         </label>
         <label className="flex w-full flex-col gap-1 text-sm font-medium text-dd-fg sm:w-56">
@@ -78,7 +78,7 @@ export function CatalogClient({
           <select
             value={typeFilter}
             onChange={(e) => setTypeFilterAndUrl(e.target.value)}
-            className="rounded-lg border border-dd-brand/15 bg-white px-3 py-2 text-dd-fg shadow-inner outline-none focus:ring-2 focus:ring-dd-accent/30"
+            className="rounded-lg border border-dd-brand/15 bg-dd-input px-3 py-2 text-dd-fg shadow-inner outline-none focus:ring-2 focus:ring-dd-accent/30"
           >
             <option value="__all__">All</option>
             {typeOptions.map((t) => (

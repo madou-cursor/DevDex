@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  darkMode: "class",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -15,6 +16,7 @@ export default {
           accent: "var(--color-accent)",
           brand: "var(--color-brand)",
           card: "var(--color-card)",
+          input: "var(--color-input)",
           muted: "var(--color-muted)",
         },
       },
