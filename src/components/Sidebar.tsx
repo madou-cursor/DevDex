@@ -4,6 +4,7 @@ import type { Branding } from "@/lib/branding";
 import type { NavGroup } from "@/lib/nav";
 import type { VerticalId } from "@/lib/types";
 import { SidebarNav } from "./SidebarNav";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Sidebar({
   branding,
@@ -77,14 +78,8 @@ export function Sidebar({
           <span className="ml-auto text-dd-muted">build-time</span>
         </div>
         <div className="mt-3 flex items-center justify-between px-1 text-xs text-dd-muted">
-          <span>Theme</span>
-          <div
-            className="relative h-[22px] w-[38px] rounded-full bg-dd-card ring-1 ring-dd-brand/15"
-            aria-hidden
-            title="Theme toggle (placeholder)"
-          >
-            <span className="absolute left-0.5 top-0.5 block h-[18px] w-[18px] rounded-full bg-white shadow-sm" />
-          </div>
+          <span id="theme-toggle-label">Theme</span>
+          <ThemeToggle />
         </div>
       </div>
     </div>
