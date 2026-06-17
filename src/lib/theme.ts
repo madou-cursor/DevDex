@@ -26,6 +26,26 @@ export function applyTheme(theme: Theme) {
   document.documentElement.classList.toggle("dark", theme === "dark");
 }
 
+const themeListeners = new Set<() => void>();
+
+export function subscribeTheme(listener: () => void) {
+  themeListeners.add(listener);
+  return () => {
+    themeListeners.delete(listener);
+  };
+}
+
+function notifyThemeChange() {
+  for (const listener of themeListeners) {
+    listener();
+  }
+}
+
+export function getTheme(): Theme {
+  if (typeof window === "undefined") return "light";
+  return resolveTheme();
+}
+
 export function setTheme(theme: Theme) {
   try {
     window.localStorage.setItem(THEME_STORAGE_KEY, theme);
@@ -33,6 +53,7 @@ export function setTheme(theme: Theme) {
     /* ignore */
   }
   applyTheme(theme);
+  notifyThemeChange();
 }
 
 export const themeInitScript = `(function(){try{var k="${THEME_STORAGE_KEY}";var t=localStorage.getItem(k);if(t!=="light"&&t!=="dark")t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.classList.toggle("dark",t==="dark")}catch(e){}})();`;

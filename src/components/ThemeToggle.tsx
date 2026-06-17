@@ -1,20 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { applyTheme, resolveTheme, setTheme, type Theme } from "@/lib/theme";
+import { useSyncExternalStore } from "react";
+import { getTheme, setTheme, subscribeTheme, type Theme } from "@/lib/theme";
 
 export function ThemeToggle() {
-  const [theme, setThemeState] = useState<Theme>("light");
-
-  useEffect(() => {
-    const resolved = resolveTheme();
-    setThemeState(resolved);
-    applyTheme(resolved);
-  }, []);
+  const theme = useSyncExternalStore(subscribeTheme, getTheme, () => "light");
 
   const toggle = () => {
     const next: Theme = theme === "dark" ? "light" : "dark";
-    setThemeState(next);
     setTheme(next);
   };
 
